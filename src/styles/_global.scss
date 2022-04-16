@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Galada&family=Noto+Sans:wght@100;300;400;500;700&display=swap");
 
+:root {
+  --primary: #7c16c4;
+  --secondary: #ff10f0;
+  --body-bg: #fff;
+  --text-color: #010101;
+  // --text-color: red;
+  --nav-bg: #fff;
+  --nav-link: #010101;
+  --nav-link-hover: var(--primary);
+
+  --gutter-width: 6vw;
+  --gap: 80px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +21,22 @@
   font-family: "Noto Sans", sans-serif;
 }
 
-// Variables
-:root {
-  --primary: #7c16c4;
-  --secondary: #ff10f0;
-  --body-bg: #fff;
-  --nav-bg: #fff;
-  --nav-link: #010101;
-  --nav-link-hover: var(--primary);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text-color);
+  line-height: 1.5;
+}
 
-  --gutter-width: 6vw;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
 }
