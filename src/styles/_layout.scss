@@ -2,6 +2,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
 }
 
@@ -20,6 +21,8 @@ body {
   display: flex;
   width: 100%;
   padding: 0 var(--gutter-width);
+  max-width: 1500px;
+  margin: 0 auto;
 }
 .sub-row::after {
   display: block;

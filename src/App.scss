@@ -1,3 +1,7 @@
 @use "./styles/global";
 @use "./styles/nav";
 @use "./styles/layout";
+
+.pages {
+  min-width: 100%;
+}
