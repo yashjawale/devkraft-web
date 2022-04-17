@@ -2,12 +2,14 @@
 
 :root {
   --primary: #7c16c4;
-  --primary-hover: #651c99;
+  // --primary-hover: #651c99;
+  --primary-hover: #470092;
   --secondary: #ff10f0;
+  --secondary-hover: #c700bd;
   --body-bg: #fff;
   --text-color: #010101;
-  --nav-bg: #fff;
-  --nav-link: #010101;
+  --nav-bg: var(--body-bg);
+  --nav-link: var(--text-color);
   --nav-link-hover: var(--primary);
   --footer-bg: #444444;
   --footer-color: #fefefe;
@@ -58,3 +60,21 @@ p {
   color: var(--body-bg);
   background: var(--primary);
 }
+
+/* Dark theme colors */
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --primary: #bb86fc;
+//     --primary-hover: #7c16c4;
+//     --secondary: #ff65ff;
+//     --secondary-hover: #ff10f0;
+//     --body-bg: #121212;
+//     --text-color: #fafafa;
+//     --nav-bg: var(--body-bg);
+//     --nav-link: var(--text-color);
+//     --nav-link-hover: var(--primary);
+//     --footer-bg: #444444;
+//     --footer-color: #fefefe;
+//     --footer-hover: var(--primary);
+//   }
+// }
