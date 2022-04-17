@@ -1,4 +1,4 @@
-import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Hero = (props) => {
   return (
@@ -17,7 +17,9 @@ const Hero = (props) => {
   //       <div className="timestamp">10 DEC 21</div>
   //       <div className="greeting">Join us at</div>
   //       <div className="heading">Oil Painting Workshop</div>
-  //       <div className="link">Learn More</div>
+  //       <div className="link">
+  //         Learn More <FaExternalLinkAlt />
+  //       </div>
   //     </div>
   //   </div>
   // );
