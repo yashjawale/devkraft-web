@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
+// import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../assets/devkraft-logo.png";
 
 const Navbar = () => {
@@ -9,10 +10,20 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-container">
-        <NavLink exact to="/" className="nav-logo">
+        <NavLink
+          exact
+          to="/"
+          className="nav-logo"
+          onClick={() => setNavToggle(false)}
+        >
           <img src={logo} alt="Team Devkraft" className="logo" />
         </NavLink>
         <ul className={"nav-menu" + (navToggle ? " active" : "")}>
+          <li className="nav-item">
+            <NavLink onClick={handleToggle} exact to="/" className="nav-link">
+              Home
+            </NavLink>
+          </li>
           <li className="nav-item">
             <NavLink
               onClick={handleToggle}
@@ -46,6 +57,7 @@ const Navbar = () => {
         </ul>
         <div className="nav-icon" onClick={handleToggle}>
           {navToggle ? <FaTimes /> : <FaBars />}
+          {/* {navToggle ? <FiX /> : <FiMenu />} */}
         </div>
       </div>
     </nav>
