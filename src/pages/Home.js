@@ -1,9 +1,11 @@
 import HeadedParagraph from "../components/HeadedParagraph";
+import Hero from "../components/Hero";
 import IconLink from "../components/IconLink";
 
 const Home = () => {
   return (
     <>
+      <Hero />
       <HeadedParagraph title="Who are we?">
         We are a team of passionate students constantly finding ways to make the
         lives of students at{" "}
