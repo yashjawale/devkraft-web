@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Discord from "./pages/Discord";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/discord" element={<Discord />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>

@@ -44,6 +44,16 @@ const Navbar = () => {
               Team
             </NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink
+              onClick={handleToggle}
+              exact
+              to="/discord"
+              className="nav-link"
+            >
+              Discord
+            </NavLink>
+          </li>
           <li className="nav-item last-item">
             <NavLink
               onClick={handleToggle}

@@ -4,7 +4,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const IconLink = (props) => {
   return (
     <a
-      style={{ textDecoration: "none", color: "var(--secondary)" }}
+      style={{
+        textDecoration: "none",
+        color: "var(--secondary)",
+        paddingRight: "6px",
+      }}
       href={props.to}
       target={props.external ? "_blank" : false}
       rel={props.external ? "noreferrer" : false}
