@@ -6,7 +6,13 @@ const HeadedParagraph = (props) => {
       <div className="gutter"></div>
       <div className="sub-row">
         <div className="col-12">
-          <h2 style={{ color: "var(--primary)", marginBottom: "0.8rem" }}>
+          <h2
+            style={{
+              color: "var(--primary)",
+              marginBottom: "0.6rem",
+              fontSize: "1.8rem",
+            }}
+          >
             {props.title}
           </h2>
           <p>{props.children}</p>
