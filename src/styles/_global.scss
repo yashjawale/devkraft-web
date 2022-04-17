@@ -2,10 +2,10 @@
 
 :root {
   --primary: #7c16c4;
+  --primary-hover: #651c99;
   --secondary: #ff10f0;
   --body-bg: #fff;
   --text-color: #010101;
-  // --text-color: red;
   --nav-bg: #fff;
   --nav-link: #010101;
   --nav-link-hover: var(--primary);
@@ -46,4 +46,15 @@ h6 {
 
 p {
   font-size: 1.2rem;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--body-bg);
+  background: var(--primary);
+}
+
+::selection {
+  color: var(--body-bg);
+  background: var(--primary);
 }

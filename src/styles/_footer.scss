@@ -25,13 +25,16 @@ footer {
   margin-bottom: 1rem;
   a > * {
     font-size: 2.275rem;
-    padding: 6px;
+    padding: 4px;
     background-color: var(--footer-color);
     color: var(--footer-bg);
+    border: 2px solid var(--footer-color);
     border-radius: 50%;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
     &:hover {
       transform: translateY(-4px);
+      color: var(--footer-color);
+      background-color: var(--footer-bg);
     }
   }
 }
